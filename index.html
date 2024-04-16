@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIDS Arcesium Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0% 10%;
+      background-color: #f5f5f5;
+      width: 80%;
+      align-items: center;
+    }
+    header {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 1rem;
+      width: 80%;
+    }
+    .summary {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+      color: #666;
+    }
+    .quiz {
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 4px;
+      background-color: #fff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+    }
+    .quiz-title {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 0.5rem; /* Ensure some space between title and button on mobile */
+    }
+    .quiz-button {
+      padding: 0.1rem 0.1rem;
+      border: none;
+      border-radius: 4px;
+      background-color: #2196f3;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .quiz-button:hover {
+      background-color: #1779ba;
+    }
+    .date {
+      font-style: italic;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    .quiz-group {
+      list-style-type: none;
+      padding-inline-start: 0px;
+    }
+    /* Media Queries for smaller screens */
+    @media (max-width: 768px) {
+      header {
+        font-size: 2rem;
+      }
+      .summary {
+        font-size: 1rem;
+      }
+      .quiz-button {
+        font-size: 1rem;
+      }
+      .quiz {  /* Remove flexbox properties for mobile */
+        display: block;
+      }
+      .quiz-title {
+        text-align: center;  /* Center titles on mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>GIDS Arcesium Quiz</header>
+  <div class="summary">
+    <p>Test your knowledge and skills with our engaging quizzes! 
+      These quizzes cover a variety of topics and are a great way to learn 
+      and challenge yourself.</p>
+  </div>
+  <section>
+    <h2>Upcoming Quizzes</h2>
+    <ul class="quiz-group">
+      <li class="quiz">
+        <div class="quiz-title">Quiz 1: Introduction to Arcesium</div>
+        <button class="quiz-button">Take Quiz</button>
+        <span class="date">(Opens on April 20, 2024)</span>
+      </li>
+      <li class="quiz">
+        <div class="quiz-title">Quiz 2: Data Analysis with Arcesium Tools</div>
+        <button class="quiz-button">Take Quiz</button>
+        <span class="date">(Opens on May 5, 2024)</span>
+      </li>
+      <li class="quiz">
+        <div class="quiz-title">Quiz 3: Advanced Arcesium Techniques</div>
+        <button class="quiz-button">Take Quiz</button>
+        <span class="date">(Opens on May 20, 2024)</span>
+      </li>
+    </ul>
+  </section>
+</body>
+</html>
